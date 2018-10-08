@@ -1,0 +1,46 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  .header{
+    flex-basis: 100px;
+    height: 100px;
+    background-color: #c7c7c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .name{
+      margin-right: 40px;
+      color:#fff;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  .content{
+    flex:1;
+    display: flex;
+    overflow: hidden;
+    .app-left{
+      width:180px;
+      min-width: 180px;
+      height: 600px;
+      background-color: #e2e2e8;
+      overflow: auto;
+      .item{
+        text-align: center;
+        height:60px;
+        line-height: 60px;
+        background-color: #58b7fa;
+        color:#fff;
+        margin-bottom: 10px;
+        display: block;
+      }
+    }
+    .app-container{
+      flex:1;
+      text-align: center;
+      padding-top: 20px;
+      overflow: auto;
+    }
+  }
+}
